@@ -1,6 +1,8 @@
 # Codewars
 Having fun here getting a little sharper with Javascript :)
 
+---
+
 ## The Hashtag Generator
 Completed May 21 2020
 https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
