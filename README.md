@@ -2,6 +2,7 @@
 Having fun here getting a little sharper with Javascript :)
 
 ## The Hashtag Generator
+Completed May 21 2020
 https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
 
 ### Solution 1 (before a final refactor)
@@ -117,6 +118,7 @@ function comp(array1, array2){
 }
 ```
 
+---
 
 ## Format a string of names like 'Bart, Lisa & Maggie'.
 Completed May 2020
@@ -152,6 +154,8 @@ function list(names){
 }
 ```
 
+---
+
 ## My Languages
 Completed April 2020
 https://www.codewars.com/kata/5b16490986b6d336c900007d
@@ -174,6 +178,8 @@ function myLanguages(results) {
   return sixtyOrHigherTest.sort((a,b) => b[1] - a[1]).map(language => language[0]);
 }
 ```
+
+---
 
 ## Happy Birthday, Darling!
 Completed April 2020
@@ -212,6 +218,8 @@ function womensAge(n) {
   }
 }
 ```
+
+---
 
 ## Sum of Digits / Digital Root
 Completed March 2020
