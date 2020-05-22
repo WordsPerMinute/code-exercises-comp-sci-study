@@ -7,7 +7,7 @@ Having fun here getting a little sharper with Javascript :)
 Completed May 21 2020
 https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
 
-### Solution 1 (before a final refactor)
+#### Solution 1 (before a final refactor)
 ```
 function generateHashtag (str) {
   let emptyOrLongerThan140Char = false;
@@ -25,7 +25,7 @@ function generateHashtag (str) {
 }
 ```
 
-### Solution 2 (refactored)
+#### Solution 2 (refactored)
 ```
 function generateHashtag (str) {
   if(!str || str[0] === "") return false;
