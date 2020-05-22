@@ -3,6 +3,13 @@ Having fun here getting a little sharper with Javascript :)
 
 ---
 
+## A simple Tic-tac-toe class
+My friend who's a decent coder said this had him freeze up during a tech interview.
+Starting May 22
+https://www.codewars.com/kata/529b9ec8064ec38636000134
+
+---
+
 ## The Hashtag Generator
 Completed May 21 2020
 https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
