@@ -1,6 +1,12 @@
 # Codewars
 Having fun here getting a little sharper with Javascript :)
 
+## The Hashtag Generator
+https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
+
+### Solution
+
+
 ## Are they the "same"?
 Completed May 2020
 https://www.codewars.com/kata/550498447451fbbd7600041c
@@ -78,6 +84,7 @@ function comp(array1, array2){
   return onlyTrues;
 }
 ```
+
 
 ## Format a string of names like 'Bart, Lisa & Maggie'.
 Completed May 2020
