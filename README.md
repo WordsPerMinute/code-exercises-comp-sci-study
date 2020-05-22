@@ -37,6 +37,7 @@ function generateHashtag (str) {
 }
 ```
 
+---
 
 ## Are they the "same"?
 Completed May 2020
