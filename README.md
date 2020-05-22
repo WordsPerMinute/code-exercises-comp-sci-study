@@ -4,27 +4,27 @@ Having fun here getting a little sharper with Javascript :)
 ## The Hashtag Generator
 https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
 
-### Working solution (9pm... not quite there but want to get there before I go to sleep!)
+### Solution 1 (before a final refactor)
 ```
 function generateHashtag (str) {
   let emptyOrLongerThan140Char = false;
   let newString = "";
-  str[0] ? null : emptyOrLongerThan140Char = true;
-  console.log('t/f:', emptyOrLongerThan140Char);
+  str[0] && (str.split(' ').join('').length > 0) ? null : emptyOrLongerThan140Char = true;
   
-  if (!emptyOrLongerThan140Char && (str.split(' ').join('').length > 0)) {
-    console.log('initial string:', str);
-    console.log('initial string length:', str.length);
-    newString = '#' + str.split(' ').map(word => word[0].toUpperCase() + word.slice(1, word.length)).join('')
-    console.log('new string:', newString);
+  if (!emptyOrLongerThan140Char) {
+    newString = '#' + str.replace(/  +/g, ' ').split(' ').map(word => word[0].toUpperCase() + word.slice(1, word.length)).join('')
+    newString.length > 140 ? emptyOrLongerThan140Char = true : null;
   } else {
     emptyOrLongerThan140Char = true;
   }
-  
-  newString.length > 140 ? emptyOrLongerThan140Char = true : null;
 
   return emptyOrLongerThan140Char ? false : newString
 }
+```
+
+### Solution 2 (refactored)
+```
+
 ```
 
 
