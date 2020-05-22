@@ -24,7 +24,17 @@ function generateHashtag (str) {
 
 ### Solution 2 (refactored)
 ```
+function generateHashtag (str) {
+  if(!str || str[0] === "") return false;
 
+  let newString = '#' + str.replace(/  +/g, ' ').split(' ').map(word => {
+    if (word) {
+      return word[0].toUpperCase() + word.slice(1, word.length)
+    }
+    }).join('')
+
+  return (newString.length > 140 || newString.length == 1) ? false : newString
+}
 ```
 
 
