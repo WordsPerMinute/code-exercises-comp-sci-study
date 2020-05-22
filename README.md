@@ -82,7 +82,7 @@ https://www.codewars.com/kata/550498447451fbbd7600041c
 > The two arrays have the same size (> 0) given as parameter in function comp.
 > 
 
-### Solution 1 (checking for null inputs in the return)
+#### Solution 1 (checking for null inputs in the return)
 ```
 function comp(array1, array2){
   const checkForFalses = () => {
@@ -101,7 +101,7 @@ function comp(array1, array2){
 ```
 
 
-### Solution 2 (checking for null inputs prior to returning)
+#### Solution 2 (checking for null inputs prior to returning)
 ```
 function comp(array1, array2){
   var onlyTrues = true;
@@ -146,7 +146,7 @@ https://www.codewars.com/kata/53368a47e38700bd8300030d
 > 
 > Note: all the hashes are pre-validated and will only contain A-Z, a-z, '-' and '.'.
 
-### Solution
+#### Solution
 ```
 function list(names){
   var namesToJoin = [];
@@ -173,7 +173,7 @@ https://www.codewars.com/kata/5b16490986b6d336c900007d
 > {"Hindi": 60, "Dutch" : 93, "Greek": 71}  -->  ["Dutch", "Greek", "Hindi"]
 > {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
 
-### Solution
+#### Solution
 ```
 function myLanguages(results) {
   var sixtyOrHigherTest = Object.entries(results).filter(language => language[1] >= 60)
@@ -201,7 +201,7 @@ https://www.codewars.com/kata/5e96332d18ac870032eb735f
 > 
 > Hint: if you may don't know (enough) about numeral systems and radix, just observe the pattern!
 
-### Solution
+#### Solution
 ```
 function womensAge(n) {
   base = 1;
@@ -257,7 +257,7 @@ https://www.codewars.com/kata/541c8630095125aba6000c00
 > => 1 + 1
 > => 2
 
-### Solution
+#### Solution
 ```
 function digital_root(n) {
   let currentNumbers = n
