@@ -3,6 +3,12 @@ Having fun here getting a little sharper with Javascript :)
 
 ---
 
+## Snakes and Ladders
+Starting May 29, back in the city after a mountain hiatus
+https://www.codewars.com/kata/587136ba2eefcb92a9000027
+
+---
+
 ## Beeramid
 Starting May 27, from a vacation cabin in the mountains
 https://www.codewars.com/kata/51e04f6b544cf3f6550000c1
