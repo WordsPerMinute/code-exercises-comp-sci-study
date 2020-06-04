@@ -1,5 +1,13 @@
 # Codewars
 Having fun here getting a little sharper with Javascript :)
+Problems are measured by a kyu level, the smaller the number, the more difficult
+
+---
+
+## Count the smiley faces!
+6 kyu
+June 4
+https://www.codewars.com/kata/583203e6eb35d7980400002a
 
 ---
 
