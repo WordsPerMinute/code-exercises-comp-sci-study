@@ -1,6 +1,12 @@
 # Codewars
 Having fun here getting a little sharper with Javascript :)
 Problems are measured by a kyu level, the smaller the number, the more difficult
+---
+
+## Break camelCase
+6 kyu
+June 9
+https://www.codewars.com/kata/5208f99aee097e6552000148
 
 ---
 
