@@ -8,6 +8,20 @@ Problems are measured by a kyu level, the smaller the number, the more difficult
 June 9
 https://www.codewars.com/kata/5208f99aee097e6552000148
 
+```
+function solution(string) {
+    let separated = "";
+    for (var i = 0; i < string.length; i++) {
+      if (string[i] == string[i].toUpperCase()){
+        separated += ` ${string[i]}`;
+      } else {
+        separated += string[i];  
+      }
+    }
+    return separated;
+}
+```
+
 ---
 
 ## Count the smiley faces!
