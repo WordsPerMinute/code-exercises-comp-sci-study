@@ -9,6 +9,21 @@ June 10
 https://www.codewars.com/kata/52c31f8e6605bcc646000082
 
 ```
+function twoSum(numbers, target) {
+  let firstI = 0;
+  let secondI = 0;
+  let fired = false;
+  numbers.forEach((firstNumber, firstIndex) => {
+    numbers.forEach((secondNumber, secondIndex) => {
+      if (firstIndex != secondIndex && firstNumber + secondNumber == target && fired != true){
+        firstI = firstIndex;
+        secondI = secondIndex;
+        fired = true;
+      }
+    })
+  })
+  return [firstI, secondI];
+}
 ```
 ---
 
