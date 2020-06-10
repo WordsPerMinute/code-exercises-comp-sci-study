@@ -3,6 +3,15 @@ Having fun here getting a little sharper with Javascript :)
 Problems are measured by a kyu level, the smaller the number, the more difficult
 ---
 
+## Two Sum
+6 kyu
+June 10
+https://www.codewars.com/kata/52c31f8e6605bcc646000082
+
+```
+```
+---
+
 ## Break camelCase
 6 kyu
 June 9
