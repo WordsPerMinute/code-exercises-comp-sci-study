@@ -5,6 +5,33 @@ Problems are measured by a kyu level, the smaller the number, the more difficult
 
 ---
 
+## Persistent Bugger
+6 kyu
+June 11
+https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
+
+```
+function persistence(num) {
+  let stringedNumber = num.toString();
+  let multipliedNumber = 0;
+  let multiplyCounter = 0;
+  
+  while (stringedNumber.length != 1) {
+    let separatedNumbers = []
+    for (var i = 0; i < stringedNumber.length; i += 1) {
+      separatedNumbers.push(parseInt(stringedNumber.charAt(i)))
+    }
+    multipliedNumber = separatedNumbers.reduce((acc, val) => acc *= val);
+    stringedNumber = multipliedNumber.toString();
+    multiplyCounter++;
+  }
+  
+  return multiplyCounter
+}
+```
+
+---
+
 ## Disemvowel Trolls
 7 kyu
 June 11
