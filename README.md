@@ -1,6 +1,21 @@
 # Codewars
 Having fun here getting a little sharper with Javascript :)
 Problems are measured by a kyu level, the smaller the number, the more difficult
+
+
+---
+
+## Disemvowel Trolls
+7 kyu
+June 11
+https://www.codewars.com/kata/52c31f8e6605bcc646000082
+
+```
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+```
+
 ---
 
 ## Two Sum
