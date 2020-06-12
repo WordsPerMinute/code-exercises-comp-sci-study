@@ -2,6 +2,15 @@
 Having fun here getting a little sharper with Javascript :)
 Problems are measured by a kyu level, the smaller the number, the more difficult
 
+---
+
+## Word a10n (abbreviation)
+6 kyu
+June 12
+https://www.codewars.com/kata/5375f921003bf62192000746
+
+```
+```
 
 ---
 
@@ -35,7 +44,7 @@ function persistence(num) {
 ## Disemvowel Trolls
 7 kyu
 June 11
-https://www.codewars.com/kata/52c31f8e6605bcc646000082
+https://www.codewars.com/kata/52fba66badcd10859f00097e
 
 ```
 function disemvowel(str) {
