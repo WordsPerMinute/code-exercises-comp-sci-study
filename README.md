@@ -6,10 +6,31 @@ Problems are measured by a kyu level, the smaller the number, the more difficult
 
 ## Word a10n (abbreviation)
 6 kyu
-June 12
+June 13
 https://www.codewars.com/kata/5375f921003bf62192000746
 
 ```
+```
+
+---
+
+## Word a10n (abbreviation)
+6 kyu
+June 12
+https://www.codewars.com/kata/5375f921003bf62192000746
+
+in progress
+```
+function abbreviate(string) {
+  let newString = ""
+  if (string.length > 4) {
+    let middleCharacters = string.length - 2
+    console.log(middleCharacters)
+    newString = string.replace(/\B[a-z]*\B/, `${middleCharacters}`)
+  }
+  
+  return newString
+}
 ```
 
 ---
