@@ -10,6 +10,14 @@ June 13
 https://www.codewars.com/kata/5245a9138ca049e9a10007b8
 
 ```
+function countAdjacentPairs(searchString) {
+  let regexSearchForDuplicate = /\b(\w+)\b\s+\1\b\s*(\1\b\s)*/gi;
+  try {
+    return duplicateCounter = searchString.match(regexSearchForDuplicate||[]).length
+  } catch (error) {
+      return 0
+  }
+}
 ```
 
 ---
