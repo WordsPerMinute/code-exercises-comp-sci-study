@@ -4,10 +4,10 @@ Problems are measured by a kyu level, the smaller the number, the more difficult
 
 ---
 
-## Word a10n (abbreviation)
+## Adjacent repeated words in a string
 6 kyu
 June 13
-https://www.codewars.com/kata/5375f921003bf62192000746
+https://www.codewars.com/kata/5245a9138ca049e9a10007b8
 
 ```
 ```
