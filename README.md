@@ -1,6 +1,16 @@
-# Codewars
+# About
 Having fun here getting a little sharper with Javascript :)
-Problems are measured by a kyu level, the smaller the number, the more difficult
+For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
+
+---
+
+## 1282. Group the People Given the Group Size They Belong To
+Medium
+June 14
+https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+
+```
+```
 
 ---
 
