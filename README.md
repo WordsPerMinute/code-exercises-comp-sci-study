@@ -4,6 +4,16 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ---
 
+## Array Helpers
+6 kyu  
+June 14
+https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+
+```
+```
+
+---
+
 ## 1282. Group the People Given the Group Size They Belong To
 Medium
 June 14
