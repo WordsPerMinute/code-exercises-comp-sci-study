@@ -6,8 +6,8 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ## Array Helpers
 6 kyu  
-June 14
-https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+June 15
+https://www.codewars.com/kata/525d50d2037b7acd6e000534
 
 ```
 ```
@@ -15,8 +15,8 @@ https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-
 ---
 
 ## 1282. Group the People Given the Group Size They Belong To
-Medium
-June 14
+Medium  
+June 14  
 https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
 
 ```
@@ -25,8 +25,8 @@ https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-
 ---
 
 ## Adjacent repeated words in a string
-6 kyu
-June 13
+6 kyu  
+June 13  
 https://www.codewars.com/kata/5245a9138ca049e9a10007b8
 
 ```
@@ -43,8 +43,8 @@ function countAdjacentPairs(searchString) {
 ---
 
 ## Word a10n (abbreviation)
-6 kyu
-June 12
+6 kyu  
+June 12  
 https://www.codewars.com/kata/5375f921003bf62192000746
 
 in progress
@@ -64,8 +64,8 @@ function abbreviate(string) {
 ---
 
 ## Persistent Bugger
-6 kyu
-June 11
+6 kyu  
+June 11  
 https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
 
 ```
@@ -91,8 +91,8 @@ function persistence(num) {
 ---
 
 ## Disemvowel Trolls
-7 kyu
-June 11
+7 kyu  
+June 11  
 https://www.codewars.com/kata/52fba66badcd10859f00097e
 
 ```
@@ -104,8 +104,8 @@ function disemvowel(str) {
 ---
 
 ## Two Sum
-6 kyu
-June 10
+6 kyu  
+June 10  
 https://www.codewars.com/kata/52c31f8e6605bcc646000082
 
 ```
@@ -128,8 +128,8 @@ function twoSum(numbers, target) {
 ---
 
 ## Break camelCase
-6 kyu
-June 9
+6 kyu  
+June 9  
 https://www.codewars.com/kata/5208f99aee097e6552000148
 
 ```
@@ -149,20 +149,20 @@ function solution(string) {
 ---
 
 ## Count the smiley faces!
-6 kyu
-June 4
+6 kyu  
+June 4  
 https://www.codewars.com/kata/583203e6eb35d7980400002a
 
 ---
 
 ## Snakes and Ladders
-Starting May 29, back in the city after a mountain hiatus
+Starting May 29, back in the city after a mountain hiatus  
 https://www.codewars.com/kata/587136ba2eefcb92a9000027
 
 ---
 
 ## Beeramid
-Starting May 27, from a vacation cabin in the mountains
+Starting May 27, from a vacation cabin in the mountains  
 https://www.codewars.com/kata/51e04f6b544cf3f6550000c1
 
 > Let's pretend your company just hired your friend from college and paid you a referral bonus. Awesome! To celebrate, you're taking your team out to the terrible dive bar next door and using the referral bonus to buy, and build, the largest three-dimensional beer can pyramid you can. And then probably drink those beers, because let's pretend it's Friday too.
@@ -183,14 +183,14 @@ https://www.codewars.com/kata/51e04f6b544cf3f6550000c1
 ---
 
 ## A simple Tic-tac-toe class
-My friend who's a decent coder said this had him freeze up during a tech interview.
-Starting May 22
+My friend who's a decent coder said this had him freeze up during a tech interview.  
+Starting May 22  
 https://www.codewars.com/kata/529b9ec8064ec38636000134
 
 ---
 
 ## The Hashtag Generator
-Completed May 21 2020
+Completed May 21 2020  
 https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
 
 #### Solution 1 (before a final refactor)
@@ -229,7 +229,7 @@ function generateHashtag (str) {
 ---
 
 ## Are they the "same"?
-Completed May 2020
+Completed May 2020  
 https://www.codewars.com/kata/550498447451fbbd7600041c
 
 > Given two arrays a and b write a function comp(a, b) (compSame(a, b) in Clojure) that checks whether the two arrays have the "same" elements, with the same multiplicities. "Same" means, here, that the elements in b are the elements in a squared, regardless of the order.
@@ -309,7 +309,7 @@ function comp(array1, array2){
 ---
 
 ## Format a string of names like 'Bart, Lisa & Maggie'.
-Completed May 2020
+Completed May 2020  
 https://www.codewars.com/kata/53368a47e38700bd8300030d
 
 > Given: an array containing hashes of names
@@ -345,7 +345,7 @@ function list(names){
 ---
 
 ## My Languages
-Completed April 2020
+Completed April 2020  
 https://www.codewars.com/kata/5b16490986b6d336c900007d
 
 > Your task
@@ -370,7 +370,7 @@ function myLanguages(results) {
 ---
 
 ## Happy Birthday, Darling!
-Completed April 2020
+Completed April 2020  
 https://www.codewars.com/kata/5e96332d18ac870032eb735f
 
 > As you may know, once some people pass their teens, they jokingly only celebrate their 20th or 21st birthday, forever. With some maths skills, that's totally possible - you only need to select the correct number base!
@@ -410,7 +410,7 @@ function womensAge(n) {
 ---
 
 ## Sum of Digits / Digital Root
-Completed March 2020
+Completed March 2020  
 https://www.codewars.com/kata/541c8630095125aba6000c00
 
 > In this kata, you must create a digital root function.
