@@ -4,10 +4,10 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ---
 
-## Array Helpers
+## longest_palindrome
 6 kyu  
 June 15  
-https://www.codewars.com/kata/525d50d2037b7acd6e000534
+https://www.codewars.com/kata/54bb6f887e5a80180900046b
 
 ```
 ```
