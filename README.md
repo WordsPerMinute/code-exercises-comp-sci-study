@@ -4,6 +4,16 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ---
 
+## Reverse or rotate?
+6 kyu  
+June 16  
+https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991
+
+```
+```
+
+---
+
 ## longest_palindrome
 6 kyu  
 June 15  
