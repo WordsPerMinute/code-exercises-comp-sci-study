@@ -4,6 +4,16 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ---
 
+## The Supermarket Queue
+6 kyu  
+June 16  
+https://www.codewars.com/kata/57b06f90e298a7b53d000a86
+
+```
+```
+
+---
+
 ## Reverse or rotate?
 6 kyu  
 June 16  
