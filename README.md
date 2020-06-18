@@ -4,6 +4,15 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ---
 
+## Top Scores (Practice Interview Question)
+June 17  
+https://www.interviewcake.com/question/javascript/top-scores
+
+```
+```
+
+---
+
 ## The Supermarket Queue
 6 kyu  
 June 16  
