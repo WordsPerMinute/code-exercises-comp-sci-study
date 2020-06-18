@@ -4,6 +4,15 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ---
 
+## Multi-tap Keypad Text Entry on an Old Mobile Phone
+June 18  
+https://www.codewars.com/kata/54a2e93b22d236498400134b
+
+```
+```
+
+---
+
 ## Top Scores (Practice Interview Question)
 June 17  
 https://www.interviewcake.com/question/javascript/top-scores
