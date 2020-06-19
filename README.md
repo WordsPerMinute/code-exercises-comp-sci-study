@@ -17,6 +17,17 @@ https://www.codewars.com/kata/54a2e93b22d236498400134b
 June 17  
 https://www.interviewcake.com/question/javascript/top-scores
 
+I was able to do this with .sort...  
+I'm assuming this question was created before the JS version that .sort was introduced in...
+```
+function sortScores(unorderedScores, highestPossibleScore) {
+  unorderedScores.sort((a, b) => b - a);
+  return unorderedScores;
+}
+
+```  
+
+The non-sort solution  
 ```
 ```
 
