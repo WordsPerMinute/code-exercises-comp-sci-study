@@ -56,6 +56,33 @@ function sortScores(unorderedScores, highestPossibleScore) {
 June 16  
 https://www.codewars.com/kata/57b06f90e298a7b53d000a86
 
+First submit, before refactoring
+```
+function queueTime(customers, n) {
+  const currentWaitsInLines = new Array(n).fill(0);
+  
+  const getMinimumInArray = array => {
+    return Math.min.apply( Math, array );
+  }
+  
+  const getMaximumInArray = array => {
+    return Math.max.apply( Math, array );
+  }
+
+  if (customers[0]) {
+    for (let totalCustomerNumber = customers.length; customers[0];){
+    const firstInLine = customers.shift();
+    currentWaitsInLines[currentWaitsInLines.findIndex(element => element == getMinimumInArray(currentWaitsInLines))] += firstInLine;
+    }
+    
+    return getMaximumInArray(currentWaitsInLines)
+  } else {
+    return 0
+  }
+  
+}
+```
+
 ```
 ```
 
