@@ -2,6 +2,14 @@
 Having fun here getting a little sharper with Javascript :)
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
 
+## Merge Meeting Times
+(Interview Cake)
+June 20
+https://www.interviewcake.com/question/javascript/merging-ranges?course=fc1&section=array-and-string-manipulation
+
+```
+```
+
 ---
 
 ## Multi-tap Keypad Text Entry on an Old Mobile Phone
