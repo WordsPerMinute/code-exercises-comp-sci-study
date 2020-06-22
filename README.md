@@ -7,6 +7,7 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 June 20
 https://www.interviewcake.com/question/javascript/merging-ranges?course=fc1&section=array-and-string-manipulation
 
+First attempt (before refactor)
 ```
 ```
 
