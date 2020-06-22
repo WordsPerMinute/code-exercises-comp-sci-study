@@ -7,8 +7,29 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 June 20
 https://www.interviewcake.com/question/javascript/merging-ranges?course=fc1&section=array-and-string-manipulation
 
-First attempt (before refactor)
+Getting going... to finish tomorrow (want to sleep to get up early)
 ```
+function mergeRanges(meetings) {
+
+  //helper function
+  function checkForTimeOverlap (a_startTime, a_endTime, b_startTime, b_endTime) {
+    if (a_endTime >= b_startTime && a_endTime <= b_endTime) return 'a_then_b';
+    if (b_endTime >= a_startTime && b_endTime <= a_endTime) return 'b_then_a';
+    if (b_startTime <= a_startTime && a_startTime <= b_startTime) return 'a_within_b';
+    if (a_startTime <= b_startTime && b_endTime <= a_endTime) return 'b_within_a';
+  }
+  
+  //will do either a filter to create a new array of only merged objects and single meetings, or mutate original object
+  const optimizedMeetingSchedule = [];
+  
+  meetings.forEach(meeting => {
+    console.log(meeting)
+  })
+  
+  return optimizedMeetingSchedule;
+}
+
+
 ```
 
 ---
