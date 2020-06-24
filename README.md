@@ -1,6 +1,13 @@
 # About
-Having fun here getting a little sharper with Javascript :)
+Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
+
+## Reverse String in Place
+June 23  
+https://www.interviewcake.com/question/javascript/reverse-string-in-place?course=fc1&section=array-and-string-manipulation
+
+```
+```
 
 ## Merge Meeting Times
 (Interview Cake)
