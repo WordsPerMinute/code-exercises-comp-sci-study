@@ -14,7 +14,7 @@ https://www.interviewcake.com/question/javascript/reverse-string-in-place?course
 June 20
 https://www.interviewcake.com/question/javascript/merging-ranges?course=fc1&section=array-and-string-manipulation
 
-Getting going... to finish tomorrow (want to sleep to get up early)
+In my initial approach, I tried adding this helper function... Nope :) Was not optimal.
 ```
 function mergeRanges(meetings) {
 
@@ -36,7 +36,32 @@ function mergeRanges(meetings) {
   return optimizedMeetingSchedule;
 }
 
+```
 
+A solution
+```
+function mergeRanges(meetings) {
+
+  //copy, then sort array by start times
+  const meetingsCopy = JSON.parse(JSON.stringify(meetings));
+  const sortedMeetings = meetingsCopy.sort((a, b) => a.startTime - b.startTime);
+
+  const optimizedMeetings = [sortedMeetings[0]];
+  
+  meetingsCopy.forEach((meeting, i) => {
+    console.log(meeting)
+    const currentMeeting = sortedMeetings[i];
+    const lastMergedMeeting = optimizedMeetings[optimizedMeetings.length - 1];
+    
+    if (currentMeeting.startTime <= lastMergedMeeting.endTime) {
+      lastMergedMeeting.endTime = Math.max(lastMergedMeeting.endTime, currentMeeting.endTime);
+    } else {
+      optimizedMeetings.push(currentMeeting);
+    }
+  })
+  
+  return optimizedMeetings;
+}
 ```
 
 ---
