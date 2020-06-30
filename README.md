@@ -2,6 +2,15 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
 
+---
+
+## String incrementer  
+June 29  
+https://www.codewars.com/kata/54a91a4883a7de5d7800009c  
+
+```
+```
+
 ## Reverse Words
 (Interview Cake)  
 June 28  
