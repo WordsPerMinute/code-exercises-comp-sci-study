@@ -4,6 +4,14 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ---
 
+## Human Readable Time  
+5 kyu  
+June 30  
+https://www.codewars.com/kata/52685f7382004e774f0001f7
+
+```
+```
+
 ## String incrementer  
 June 29  
 https://www.codewars.com/kata/54a91a4883a7de5d7800009c  
