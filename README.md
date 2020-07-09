@@ -2,6 +2,14 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
 
+## Regex Password Validation
+5 kyu  
+July 8
+https://www.codewars.com/kata/52e1476c8147a7547a000811
+
+```
+```
+
 ---
 
 ## Human Readable Time  
