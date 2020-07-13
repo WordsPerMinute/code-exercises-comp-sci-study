@@ -33,6 +33,21 @@ June 28
 https://www.interviewcake.com/question/javascript/reverse-words?course=fc1&section=array-and-string-manipulation
 
 ```
+function reverse(array) {
+
+  let leftIndex = 0;
+  let leftIndex = array.length - 1;
+  
+  while (leftIndex < rightIndex) {
+    let tempToSwap = array[leftIndex];
+    array[leftIndex] = array[rightIndex];
+    array[rightIndex] = tempToSwap
+    
+    leftIndex++;
+    rightIndex--;
+  }
+
+}
 ```
 
 ## Reverse String in Place
