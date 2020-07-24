@@ -30,7 +30,53 @@ https://www.codewars.com/kata/54a91a4883a7de5d7800009c
 ## Reverse Words
 (Interview Cake)  
 June 28  
-https://www.interviewcake.com/question/javascript/reverse-words?course=fc1&section=array-and-string-manipulation
+https://www.interviewcake.com/question/javascript/reverse-words?course=fc1&section=array-and-string-manipulation  
+  
+This is absolutely some of the hackiest code I've ever written. It worked but..., not ideal :)
+```
+function reverseWords(message) {
+  // Decode the message by reversing the words
+  // console.log(message)
+  if (message[0]) {
+        let wordStorage = {}
+    let wordCounter = 1
+    
+    //stuff the object with all the words
+    message.map(element => {
+      if (element !== ' ') {
+        wordStorage[wordCounter] ? wordStorage[wordCounter] += element : wordStorage[wordCounter] = element
+      } else {
+        wordCounter++
+      }
+    })
+    
+    //access the words by keys, 1, 2, 3 corresponding to the order the words were found
+    let arrayI = 0;
+    for (let objectI = wordCounter; objectI > 0; objectI--){
+      if (objectI !== 1) {
+        for (let i = 0; i < wordStorage[objectI].length; i++) {
+          message[arrayI] = wordStorage[objectI][i]
+          arrayI++
+        }
+        message[arrayI] = ' '
+        arrayI++
+      } else {
+        for (let i = 0; i < wordStorage[objectI].length; i++) {
+          message[arrayI] = wordStorage[objectI][i]
+          arrayI++
+        }
+      }
+    }
+```
+
+Refactor here after studying other solutions
+```
+```
+
+## Reverse String in Place
+(Interview Cake)  
+June 23  
+https://www.interviewcake.com/question/javascript/reverse-string-in-place?course=fc1&section=array-and-string-manipulation
 
 ```
 function reverse(array) {
@@ -48,14 +94,6 @@ function reverse(array) {
   }
 
 }
-```
-
-## Reverse String in Place
-(Interview Cake)  
-June 23  
-https://www.interviewcake.com/question/javascript/reverse-string-in-place?course=fc1&section=array-and-string-manipulation
-
-```
 ```
 
 ## Merge Meeting Times
