@@ -2,10 +2,60 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
 
+## Merge Sorted Arrays
+(Interview Cake)  
+July 24  
+https://www.interviewcake.com/question/javascript/merge-sorted-arrays?course=fc1&section=array-and-string-manipulation  
+  
+First 'green' before refactoring
+```
+function mergeArrays(myArray, alicesArray) {
+
+  // Combine the sorted arrays into one large sorted array
+  let mergedArray = []
+  
+  //help function to check if an element exists, helps with arrays of different lengths
+  function checkIfExists (arrayToCheck, arrayToCheckIndex, backupArray, backupArrayIndex) {
+    arrayToCheck[arrayToCheckIndex] ? mergedArray.push(arrayToCheck[arrayToCheckIndex]) : mergedArray.push(backupArray[backupArrayIndex])
+  }
+  
+  //help function to check if an element exists, helps with arrays of different lengths
+  function checkForEmptyArrays (arrayOne, arrayTwo) {
+    if (arrayOne.length === 0 && arrayTwo.length === 0) {return null}
+    if (arrayOne.length === 0) {mergedArray = arrayTwo}
+    if (arrayTwo.length === 0) {mergedArray = arrayOne}
+  }
+  
+  function combArraysAndMerge (arrayOne, arrayTwo) {
+    arrayOneIndex = 0;
+    arrayTwoIndex = 0;
+    totalOrders = arrayOne.length + arrayTwo.length;
+    
+    i = 0;
+    while (i < totalOrders) {
+      //from the current arrays, compare which number is greater, add it, then increase the index for that array
+      if (arrayOne[arrayOneIndex] < arrayTwo[arrayTwoIndex]){
+        checkIfExists(arrayOne, arrayOneIndex, arrayTwo, arrayTwoIndex)
+        arrayOneIndex++
+      } else {
+        checkIfExists(arrayTwo, arrayTwoIndex, arrayOne, arrayOneIndex)
+        arrayTwoIndex++
+      }
+      i++
+    }
+    checkForEmptyArrays(arrayOne, arrayTwo)
+  }
+  
+  combArraysAndMerge(myArray, alicesArray)
+
+  return mergedArray;
+}
+```
+
 ## Regex Password Validation
 5 kyu  
 July 8
-https://www.codewars.com/kata/52e1476c8147a7547a000811
+https://www.codewars.com/kata/52e1476c8147a7547a000811  
 
 ```
 ```
@@ -15,7 +65,7 @@ https://www.codewars.com/kata/52e1476c8147a7547a000811
 ## Human Readable Time  
 5 kyu  
 June 30  
-https://www.codewars.com/kata/52685f7382004e774f0001f7
+https://www.codewars.com/kata/52685f7382004e774f0001f7  
 
 ```
 ```
