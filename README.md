@@ -71,6 +71,33 @@ function reverseWords(message) {
 
 Refactor here after studying other solutions
 ```
+function reverseWords(message) {
+  //challenge here is to reverse all the words 'IN PLACE'
+
+  //helper function to reverse all the characters
+    function reverseCharacters(message, leftIndex, rightIndex){
+    while (leftIndex < rightIndex) {
+      
+      const temp = message[leftIndex];
+      message[leftIndex] = message[rightIndex];
+      message[rightIndex] = temp;
+      leftIndex++;
+      rightIndex--;
+    }
+  }
+
+  //reverse them initially
+  reverseCharacters(message, 0, message.length - 1)
+  
+  //now, reverse per word (identify by spaces)
+  let currentWordIndex = 0;
+  for (let i = 0; i <= message.length; i++) {
+    if (i === message.length || message[i] === ' ') {
+      reverseCharacters(message, currentWordIndex, i - 1)
+      currentWordIndex = i + 1
+    }
+  }
+}
 ```
 
 ## Reverse String in Place
