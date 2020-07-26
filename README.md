@@ -52,6 +52,39 @@ function mergeArrays(myArray, alicesArray) {
 }
 ```
 
+The recommended solution.  
+Here the 'isArrayExhausted' variable helps to account for what I was accomplising with the less clean 'checkForEmptyArrays'  
+```
+function mergeArrays(myArray, alicesArray) {
+  const mergedArray = [];
+
+  let currentIndexAlices = 0;
+  let currentIndexMine = 0;
+  let currentIndexMerged = 0;
+
+  while (currentIndexMerged < (myArray.length + alicesArray.length)) {
+
+    const isMyArrayExhausted = currentIndexMine >= myArray.length;
+    const isAlicesArrayExhausted = currentIndexAlices >= alicesArray.length;
+
+    if (!isMyArrayExhausted && (isAlicesArrayExhausted ||
+      (myArray[currentIndexMine] < alicesArray[currentIndexAlices]))) {
+
+      mergedArray[currentIndexMerged] = myArray[currentIndexMine];
+      currentIndexMine++;
+    } else {
+      mergedArray[currentIndexMerged] = alicesArray[currentIndexAlices];
+      currentIndexAlices++;
+    }
+
+    currentIndexMerged++;
+  }
+
+  return mergedArray;
+}
+
+```
+
 ## Regex Password Validation
 5 kyu  
 July 8
