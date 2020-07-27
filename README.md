@@ -5,8 +5,40 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 ## Cafe Order Checker (Practice Interview Question) | Interview Cake
 (Interview Cake)  
 July 26  
-https://www.interviewcake.com/question/javascript/cafe-order-checker?course=fc1&section=array-and-string-manipulation
+https://www.interviewcake.com/question/javascript/cafe-order-checker?course=fc1&section=array-and-string-manipulation  
   
+Refactored
+```
+function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
+
+  let takeOutNotEmpty = takeOutOrders.length >= 1;
+  let dineInNotEmpty = dineInOrders.length >= 1;
+  let takeOutIndex = 0;
+  let dineInIndex = 0;
+  let totalDineInTakeOut = takeOutOrders.length + dineInOrders.length;
+  let servedOrdersIndex = 0;
+  
+  if (totalDineInTakeOut !== servedOrders.length) {return false;}
+  
+  while (servedOrdersIndex < totalDineInTakeOut) {
+    let currentOrder = servedOrders[servedOrdersIndex]
+    
+    if (takeOutNotEmpty && currentOrder === takeOutOrders[takeOutIndex]) {
+      takeOutIndex++;
+      ;
+    } else if (dineInNotEmpty && currentOrder === dineInOrders[dineInIndex]) {
+      dineInIndex++;
+    } else {
+      return false;
+    }
+    servedOrdersIndex++
+  }
+  
+  return true;
+}
+```
+  
+Green before refactor
 ```
 function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
 
