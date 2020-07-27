@@ -13,9 +13,9 @@ function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
 
   let takeOutNotEmpty = takeOutOrders.length >= 1;
   let dineInNotEmpty = dineInOrders.length >= 1;
+  let totalDineInTakeOut = takeOutOrders.length + dineInOrders.length;
   let takeOutIndex = 0;
   let dineInIndex = 0;
-  let totalDineInTakeOut = takeOutOrders.length + dineInOrders.length;
   let servedOrdersIndex = 0;
   
   if (totalDineInTakeOut !== servedOrders.length) {return false;}
@@ -25,12 +25,12 @@ function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
     
     if (takeOutNotEmpty && currentOrder === takeOutOrders[takeOutIndex]) {
       takeOutIndex++;
-      ;
     } else if (dineInNotEmpty && currentOrder === dineInOrders[dineInIndex]) {
       dineInIndex++;
     } else {
       return false;
     }
+    
     servedOrdersIndex++
   }
   
