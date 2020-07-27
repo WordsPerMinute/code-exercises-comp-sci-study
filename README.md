@@ -2,12 +2,42 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
 
-## Merge Sorted Arrays
+## Cafe Order Checker (Practice Interview Question) | Interview Cake
 (Interview Cake)  
-July 24  
-https://www.interviewcake.com/question/javascript/merge-sorted-arrays?course=fc1&section=array-and-string-manipulation  
+July 26
+https://www.interviewcake.com/question/javascript/cafe-order-checker?course=fc1&section=array-and-string-manipulation
   
-First 'green' before refactoring
+```
+function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
+
+  // Check if we're serving orders first-come, first-served
+  
+  const takeOutNotEmpty = takeOutOrders.length >= 1;
+  const dineInNotEmpty = dineInOrders.length >= 1;
+  
+  let takeOutIndex = 0;
+  let dineInIndex = 0;
+  let totalDineInTakeOut = takeOutOrders.length + dineInOrders.length;
+  let servedOrdersIndex = 0;
+  let loopCounter = 0;
+  
+  if (totalDineInTakeOut !== servedOrders.length) {return false;}
+  
+  while ( servedOrdersIndex < (totalDineInTakeOut) ) {
+
+    if ((dineInNotEmpty || takeOutNotEmpty) && servedOrders[servedOrdersIndex] === takeOutOrders[takeOutIndex]) {
+      takeOutIndex++;
+      servedOrdersIndex++;
+    } else if ((dineInNotEmpty || takeOutNotEmpty) && servedOrders[servedOrdersIndex] === dineInOrders[dineInIndex]) {
+      dineInIndex++;
+      servedOrdersIndex++;
+    } else {
+      return false;
+    }
+  }
+  
+  return true;
+}
 ```
 function mergeArrays(myArray, alicesArray) {
 
