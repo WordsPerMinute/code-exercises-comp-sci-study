@@ -39,6 +39,14 @@ function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
   return true;
 }
 ```
+
+## Merge Sorted Arrays
+(Interview Cake)  
+July 24  
+https://www.interviewcake.com/question/javascript/merge-sorted-arrays?course=fc1&section=array-and-string-manipulation  
+
+First 'green' before refactoring
+```
 function mergeArrays(myArray, alicesArray) {
 
   // Combine the sorted arrays into one large sorted array
