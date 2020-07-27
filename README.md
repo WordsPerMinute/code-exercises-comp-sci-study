@@ -4,7 +4,7 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 
 ## Cafe Order Checker (Practice Interview Question) | Interview Cake
 (Interview Cake)  
-July 26
+July 26  
 https://www.interviewcake.com/question/javascript/cafe-order-checker?course=fc1&section=array-and-string-manipulation
   
 ```
