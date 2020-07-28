@@ -2,7 +2,7 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
-## Cafe Order Checker (Practice Interview Question) | Interview Cake  
+## Inflight Entertainment (Practice Interview Question) | Interview Cake
 (Interview Cake)  
 July 27  
 https://www.interviewcake.com/question/javascript/inflight-entertainment?course=fc1&section=hashing-and-hash-tables  
