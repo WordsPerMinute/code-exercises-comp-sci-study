@@ -1,8 +1,13 @@
 # About
 Having fun here getting a little sharper with Javascript :)  
-For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult
+For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
-## Cafe Order Checker (Practice Interview Question) | Interview Cake
+## Cafe Order Checker (Practice Interview Question) | Interview Cake  
+(Interview Cake)  
+July 27  
+https://www.interviewcake.com/question/javascript/inflight-entertainment?course=fc1&section=hashing-and-hash-tables  
+
+## Cafe Order Checker (Practice Interview Question) | Interview Cake  
 (Interview Cake)  
 July 26  
 https://www.interviewcake.com/question/javascript/cafe-order-checker?course=fc1&section=array-and-string-manipulation  
