@@ -6,6 +6,29 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 (Interview Cake)  
 July 27  
 https://www.interviewcake.com/question/javascript/inflight-entertainment?course=fc1&section=hashing-and-hash-tables  
+```
+function canTwoMoviesFillFlight(movieLengths, flightLength) {
+
+  // Determine if two movie runtimes add up to the flight length
+  console.log(movieLengths.sort())
+  console.log(flightLength)
+  
+  let movieSum = 0;
+  
+  if (movieLengths.length === 0) {
+    return false;
+  } else if (movieLengths.length === 1) {
+    return false;
+  } else {
+    sortedMovies = movieLengths.sort();
+    movieSum = sortedMovies[0] + sortedMovies[1];
+  }
+  
+  if (movieSum <= flightLength) return true;
+  console.log('not true')
+  return false;
+}
+```
 
 ## Cafe Order Checker (Practice Interview Question) | Interview Cake  
 (Interview Cake)  
