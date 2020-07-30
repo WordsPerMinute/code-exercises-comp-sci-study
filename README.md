@@ -30,6 +30,28 @@ function canTwoMoviesFillFlight(movieLengths, flightLength) {
 }
 ```
 
+The recommended solution. First time using a Set in JS
+```
+function canTwoMoviesFillFlight(movieLengths, flightLength) {
+
+  // Determine if two movie runtimes add up to the flight length
+  
+  const movieLengthsSeen = new Set();
+  
+  for (let i = 0; i < movieLengths.length; i++) {
+    const firstMovieLength = movieLengths[i];
+    
+    const matchingSecondMovieLength = flightLength - firstMovieLength;
+    if (movieLengthsSeen.has(matchingSecondMovieLength)) {
+      return true;
+    }
+    movieLengthsSeen.add(firstMovieLength);
+  }
+  
+  return false;
+}
+```
+
 ## Cafe Order Checker (Practice Interview Question) | Interview Cake  
 (Interview Cake)  
 July 26  
