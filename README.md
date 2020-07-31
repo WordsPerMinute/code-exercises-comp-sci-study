@@ -2,6 +2,64 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Permutation Palindrome (Practice Interview Question) | Interview Cake
+(Interview Cake)  
+July 30  
+https://www.interviewcake.com/question/javascript/inflight-entertainment?course=fc1&section=hashing-and-hash-tables  
+  
+First green before checking recommended soltuion
+```
+function hasPalindromePermutation(theString) {
+
+  function checkIfPalindrome(string) {
+    let leftIndex = 0;
+    let rightIndex = string.length - 1;
+    let isPalindrome = true
+    
+    while (leftIndex < rightIndex) {
+      if (string[leftIndex] === string[rightIndex]) {
+      } else {
+        isPalindrome = false
+        return isPalindrome;
+      }
+      leftIndex++
+      rightIndex--
+    }
+    
+    return isPalindrome;
+  }
+
+  const permutator = (inputArr) => {
+    let permutations = [];
+  
+    const permute = (arr, m = []) => {
+      if (arr.length === 0) {
+        permutations.push(m)
+      } else {
+        for (let i = 0; i < arr.length; i++) {
+          let curr = arr.slice();
+          let next = curr.splice(i, 1);
+          permute(curr.slice(), m.concat(next))
+        }
+      }
+    }
+  
+    permute(inputArr)
+    let result = permutations.map(combination => combination.join(''))
+    
+    return result;
+  }
+  
+  
+  const doesAPalindromeExist = permutator(theString.split('')).some(permutation => {
+    if (checkIfPalindrome(permutation) === true) return true;
+    else return false;
+  })
+
+  return doesAPalindromeExist;
+}
+```
+
 ## Inflight Entertainment (Practice Interview Question) | Interview Cake
 (Interview Cake)  
 July 27  
