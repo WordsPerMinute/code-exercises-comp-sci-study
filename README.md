@@ -60,6 +60,59 @@ function hasPalindromePermutation(theString) {
 }
 ```
 
+Alternative approach to checkIfPalindrome 
+```
+  function checkIfPalindrome(string) {
+    let isPalindrome = false;
+    
+    let isEven = false;
+    let isOdd = false;
+    if (string.length % 2 === 0) {
+      isEven = true;
+    } {
+      isOdd = true
+    }
+    
+    isOdd ? leftSlice = string.slice(0, Math.trunc(string.length / 2)) : leftSlice = string.slice(0, Math.round(string.length / 2))
+    isOdd ? rightSlice = string.slice(0, string.length / 2) : rightSlice = string.slice(0, string.length / 2)
+    
+    if (leftSlice === rightSlice.reverse())
+      isPalindrome = true;
+    
+    return isPalindrome;
+  }
+
+  const permutator = (inputArr) => {
+    let permutations = [];
+  
+    const permute = (arr, m = []) => {
+      if (arr.length === 0) {
+        permutations.push(m)
+      } else {
+        for (let i = 0; i < arr.length; i++) {
+          let curr = arr.slice();
+          let next = curr.splice(i, 1);
+          permute(curr.slice(), m.concat(next))
+        }
+      }
+    }
+  
+    permute(inputArr)
+    let result = permutations.map(combination => combination.join(''))
+    
+    return result;
+  }
+  
+  
+  const doesAPalindromeExist = permutator(theString.split('')).some(permutation => {
+    if (checkIfPalindrome(permutation) === true) return true;
+    else return false;
+  })
+
+  return doesAPalindromeExist;
+}
+```
+
 ## Inflight Entertainment (Practice Interview Question) | Interview Cake
 (Interview Cake)  
 July 27  
