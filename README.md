@@ -2,6 +2,14 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Word Cloud Data (Practice Interview Question) | Interview Cake
+(Interview Cake)  
+Aug 1
+https://www.interviewcake.com/question/javascript/word-cloud?course=fc1&section=hashing-and-hash-tables  
+
+```
+```
+
 ## Permutation Palindrome (Practice Interview Question) | Interview Cake
 (Interview Cake)  
 July 30  
