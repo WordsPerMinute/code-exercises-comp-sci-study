@@ -7,7 +7,31 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 Aug 1
 https://www.interviewcake.com/question/javascript/word-cloud?course=fc1&section=hashing-and-hash-tables  
 
+On my way...
 ```
+class WordCloudData {
+  constructor(inputString) {
+    this.wordsToCounts = new Map();
+    this.populateWordsToCounts(inputString);
+  }
+
+  populateWordsToCounts(inputString) {
+    console.log(inputString)
+    let wordsMap = this.wordsToCounts;
+    // Count the frequency of each word
+    let arrayOfWords = inputString.toLowerCase().split(' ');
+    arrayOfWords.forEach(word => {
+      if (wordsMap.get(word) === undefined) {
+        wordsMap.set(word, 1)
+      } else {
+        wordsMap.set(word, (wordsMap.get(word) + 1))
+      }
+      
+    })
+    console.log(wordsMap)
+  }
+
+}
 ```
 
 ## Permutation Palindrome (Practice Interview Question) | Interview Cake
