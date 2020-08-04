@@ -7,31 +7,36 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 Aug 1
 https://www.interviewcake.com/question/javascript/word-cloud?course=fc1&section=hashing-and-hash-tables  
 
-On my way...
+Updated, tinkered a bit but started too late tonight - back at it tomorrow!
+(hypens causing problems, but I want to avoid regex despite liking it)
 ```
 class WordCloudData {
   constructor(inputString) {
     this.wordsToCounts = new Map();
     this.populateWordsToCounts(inputString);
   }
-
+  
   populateWordsToCounts(inputString) {
     console.log(inputString)
-    let wordsMap = this.wordsToCounts;
-    // Count the frequency of each word
-    let arrayOfWords = inputString.toLowerCase().split(' ');
+    let wordCounter = 0;
+    let arrayOfWords = inputString.split(/-| /);
     arrayOfWords.forEach(word => {
-      if (wordsMap.get(word) === undefined) {
-        wordsMap.set(word, 1)
+        console.log(word[word.length - 1])
+      if (word[word.length - 1] === '?' || word[word.length - 1] === '!'|| word[word.length - 1] === '.'){
+        console.log('punctuation present!')
+        word = word.slice(0, word.length - 1)
+      }
+
+      if (this.wordsToCounts.get(word) === undefined) {
+        this.wordsToCounts.set(word, 1)
       } else {
-        wordsMap.set(word, (wordsMap.get(word) + 1))
+        this.wordsToCounts.set(word, (this.wordsToCounts.get(word) + 1))
       }
       
     })
-    console.log(wordsMap)
+    console.log(this.wordsToCounts)
+    return this.wordsToCounts
   }
-
-}
 ```
 
 ## Permutation Palindrome (Practice Interview Question) | Interview Cake
