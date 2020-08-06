@@ -2,6 +2,14 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Rot13
+5 kyu  
+Aug 5  
+https://www.codewars.com/kata/57b06f90e298a7b53d000a86  
+
+```
+```
+
 ## Word Cloud Data (Practice Interview Question) | Interview Cake
 (Interview Cake)  
 Aug 1
@@ -581,7 +589,7 @@ function sortScores(unorderedScores, highestPossibleScore) {
 ## The Supermarket Queue
 6 kyu  
 June 16  
-https://www.codewars.com/kata/57b06f90e298a7b53d000a86
+https://www.codewars.com/kata/57b06f90e298a7b53d000a86  
 
 First submit, before refactoring
 ```
