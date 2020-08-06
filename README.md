@@ -7,7 +7,92 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 Aug 5  
 https://www.codewars.com/kata/57b06f90e298a7b53d000a86  
 
+Certainly don't enjoy mapping out the letters, but it might be necessary?... Will refactor
 ```
+function rot13(message){
+  let lettersByPosition = [
+    [1, 'a'],
+    [2, 'b'],
+    [3, 'c'],
+    [4, 'd'],
+    [5, 'e'],
+    [6, 'f'],
+    [7, 'g'],
+    [8, 'h'],
+    [9, 'i'],
+    [10, 'j'],
+    [11, 'k'],
+    [12, 'l'],
+    [13, 'm'],
+    [14, 'n'],
+    [15, 'o'],
+    [16, 'p'],
+    [17, 'q'],
+    [18, 'r'],
+    [19, 's'],
+    [20, 't'],
+    [21, 'u'],
+    [22, 'v'],
+    [23, 'w'],
+    [24, 'x'],
+    [25, 'y'],
+    [26, 'z']
+  ];
+  let positionByLetters = [
+    ['a', 1],
+    ['b', 2],
+    ['c', 3],
+    ['d', 4],
+    ['e', 5],
+    ['f', 6],
+    ['g', 7],
+    ['h', 8],
+    ['i', 9],
+    ['j', 10],
+    ['k', 11],
+    ['l', 12],
+    ['m', 13],
+    ['n', 14],
+    ['o', 15],
+    ['p', 16],
+    ['q', 17],
+    ['r', 18],
+    ['s', 19],
+    ['t', 20],
+    ['u', 21],
+    ['v', 22],
+    ['w', 23],
+    ['x', 24],
+    ['y', 25],
+    ['z', 26]
+  ];
+  let byPositionMap = new Map(lettersByPosition);
+  let byLetterMap = new Map(positionByLetters);
+  
+  encodedCaesarStyle = message.split('').map(letter => {
+    let newPosition = 0;
+    let upperCase = false;
+    if (letter === letter.toUpperCase()) {upperCase = true;}
+    upperCase ? alphabetPosition = byLetterMap.get(letter.toLowerCase()) : alphabetPosition = byLetterMap.get(letter);
+    console.log(alphabetPosition);
+    
+    if (alphabetPosition > 13) {
+      let total = 13 + alphabetPosition
+      let remainder = total - 26;
+      newPosition = remainder;
+    } else {
+      newPosition = 13 + alphabetPosition
+    }
+    
+    upperCase ? newLetter = byPositionMap.get(newPosition).toUpperCase() : newLetter = byPositionMap.get(newPosition)
+    
+    return newLetter
+    
+  }).join('')
+
+  return encodedCaesarStyle
+  
+}
 ```
 
 ## Word Cloud Data (Practice Interview Question) | Interview Cake
