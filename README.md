@@ -71,27 +71,32 @@ function rot13(message){
   
   encodedCaesarStyle = message.split('').map(letter => {
     let newPosition = 0;
+    // set default letter, in case it's puncutation or a space, etc
+    let newLetter = letter;
+    // check if letter is uppercase
     let upperCase = false;
     if (letter === letter.toUpperCase()) {upperCase = true;}
-    upperCase ? alphabetPosition = byLetterMap.get(letter.toLowerCase()) : alphabetPosition = byLetterMap.get(letter);
-    console.log(alphabetPosition);
     
-    if (alphabetPosition > 13) {
-      let total = 13 + alphabetPosition
-      let remainder = total - 26;
-      newPosition = remainder;
-    } else {
-      newPosition = 13 + alphabetPosition
-    }
-    
-    upperCase ? newLetter = byPositionMap.get(newPosition).toUpperCase() : newLetter = byPositionMap.get(newPosition)
-    
-    return newLetter
-    
-  }).join('')
+    // first, check if letter is a valid English alphabet letter
+    if (byLetterMap.has(letter.toLowerCase())) {
+      
+      upperCase ? alphabetPosition = byLetterMap.get(letter.toLowerCase()) : alphabetPosition = byLetterMap.get(letter);
+      
+      // if adding 13 takes the letter past 26 (the last valid letter), let's figure out a remainder first
+      if (alphabetPosition > 13) {
+        let total = alphabetPosition + 13;
+        // use modulo to determine the remainder to count again from 0 or 'a'
+        newPosition = total % 26;
+      } else {
+        newPosition = 13 + alphabetPosition
+      }
 
+      upperCase ? newLetter = byPositionMap.get(newPosition).toUpperCase() : newLetter = byPositionMap.get(newPosition)
+    }
+    return newLetter
+  }).join('')
+    
   return encodedCaesarStyle
-  
 }
 ```
 
