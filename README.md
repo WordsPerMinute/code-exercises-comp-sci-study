@@ -2,10 +2,18 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Unary function chainer  
+6 kyu  
+Aug 7  
+https://www.codewars.com/kata/54ca3e777120b56cb6000710   
+
+```
+```
+
 ## Rot13
 5 kyu  
 Aug 5  
-https://www.codewars.com/kata/57b06f90e298a7b53d000a86  
+https://www.codewars.com/kata/530e15517bc88ac656000716  
 
 Certainly don't enjoy mapping out the letters, but it might be necessary?... Will refactor
 ```
