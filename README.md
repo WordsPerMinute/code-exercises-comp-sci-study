@@ -2,6 +2,13 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Apple Stocks  
+Aug 10  
+https://www.interviewcake.com/question/javascript/stock-price?course=fc1&section=greedy  
+
+```
+```
+
 ## Unary function chainer  
 6 kyu  
 Aug 7  
