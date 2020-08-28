@@ -2,6 +2,13 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Recursive Replication  
+Aug 27  
+https://www.codewars.com/kata/57547f9182655569ab0008c4  
+
+```
+```
+
 ## Apple Stocks  
 Aug 10  
 https://www.interviewcake.com/question/javascript/stock-price?course=fc1&section=greedy  
