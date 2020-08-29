@@ -28,16 +28,22 @@ https://www.codewars.com/kata/57547f9182655569ab0008c4
 
 ```
 function replicate(times, number) {
-  console.log(times, number)
-  if (times < 0) {
-    return []
-  } else if (times === 0) {
-    return []
-  } else if (times === 1) {
-    return number
-  } else {
-    return [number, replicate(times - 1, number)]
+  let array = []
+  
+  function populateArrayByTimeAmount(times, number) {
+      if (times < 0) {
+      } else if (times === 0) {
+      } else if (times === 1) {
+        array.push(number)
+      } else {
+        array.push(number)
+        populateArrayByTimeAmount(times - 1, number)
+      }
   }
+  
+  populateArrayByTimeAmount(times, number)
+  
+  return array
 }
 ```
 
