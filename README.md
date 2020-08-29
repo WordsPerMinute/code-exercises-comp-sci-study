@@ -6,25 +6,17 @@ For Codewars, problems are measured by a kyu level, the smaller the number, the 
 Aug 27  
 https://www.codewars.com/kata/57547f9182655569ab0008c4  
 
-This is... interesting so far (tests failing). It's late but want to get some JS in.
 ```
 function solve(a,b){
-    console.log('a:', a, 'b:', b)
     if (a == 0 || b == 0) {
-      console.log('step 1')
       return [a,b]
     } else if (a >= 2*b) {
-      console.log('step 2')
       a = a - 2*b;
-      solve(a,b);
+      return solve(a,b);
     } else if (b >= 2*a) {
-      console.log('step 3')
       b = b - 2*a;
-      console.log(b)
-      solve(a,b);
+      return solve(a,b);
     } else {
-      console.log('step 4')
-      console.log([a,b])
       return ([a,b])
     }
 }
