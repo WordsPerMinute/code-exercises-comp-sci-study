@@ -2,9 +2,9 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
-## Recursive Replication  
-Aug 27  
-https://www.codewars.com/kata/57547f9182655569ab0008c4  
+## Recursion 101  
+Aug 29  
+https://www.codewars.com/kata/5b752a42b11814b09c00005d/solutions/javascript  
 
 ```
 function solve(a,b){
@@ -19,6 +19,25 @@ function solve(a,b){
     } else {
       return ([a,b])
     }
+}
+```
+
+## Recursive Replication  
+Aug 27  
+https://www.codewars.com/kata/57547f9182655569ab0008c4  
+
+```
+function replicate(times, number) {
+  console.log(times, number)
+  if (times < 0) {
+    return []
+  } else if (times === 0) {
+    return []
+  } else if (times === 1) {
+    return number
+  } else {
+    return [number, replicate(times - 1, number)]
+  }
 }
 ```
 
