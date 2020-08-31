@@ -26,6 +26,18 @@ function solve(a,b){
 Aug 27  
 https://www.codewars.com/kata/57547f9182655569ab0008c4  
 
+Refactored (with concat)  
+```
+function replicate(times, number) {
+  if (times > 0) {
+    return [number].concat(replicate(times - 1, number))
+  } else {
+    return []
+  }
+}
+```
+
+Original  
 ```
 function replicate(times, number) {
   let array = []
