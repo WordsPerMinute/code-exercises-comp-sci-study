@@ -3,6 +3,39 @@ Having fun here getting a little sharper with Javascript :)
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
 ## Recursion 101  
+Aug 31  
+https://www.codewars.com/kata/514a024011ea4fb54200004b  
+
+I wanted to try solving this without using Regex, because it might have been less fun using it.
+This works for the base cases, but the extended tests break it. Will refactor tomorrow.
+```
+function domainName(url){
+  
+  let indexOfDomainStart = 0;
+  let indexOfDomainEnd = 0;
+  
+  for (let i = 0; i < url.length; i++) {
+    if (!indexOfDomainStart && url.slice(i, i + 2) === "//" && url.slice(i + 2, i + 6) === "www.") {
+      // found http://www.
+      indexOfDomainStart = i + 6;
+    } else if (!indexOfDomainStart && url.slice(i, i + 4) === "www.") {
+      // found only www.
+      indexOfDomainStart = i + 4;
+    } else if (!indexOfDomainStart && url.slice(i, i + 2) === "//") {
+      // found only http:// or https://
+      indexOfDomainStart = i + 2;
+    } else if (indexOfDomainStart && url[i] === "." && i !== 3) {
+      // found the punctuation after the domain. Note: subdomains would break this.
+      indexOfDomainEnd = i
+      break;
+    } else {
+    }
+  }
+  return url.slice(indexOfDomainStart, indexOfDomainEnd)
+}
+```
+
+## Recursion 101  
 Aug 29  
 https://www.codewars.com/kata/5b752a42b11814b09c00005d/solutions/javascript  
 
