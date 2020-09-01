@@ -8,7 +8,7 @@ https://www.codewars.com/kata/514a024011ea4fb54200004b
 
 I wanted to try solving this without using Regex, because it might have been less fun using it.
 This works for the base cases, but the extended tests break it. Will refactor tomorrow.
-```
+```js
 function domainName(url){
   
   let indexOfDomainStart = 0;
