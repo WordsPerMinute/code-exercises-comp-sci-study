@@ -39,7 +39,7 @@ function domainName(url){
 Aug 29  
 https://www.codewars.com/kata/5b752a42b11814b09c00005d/solutions/javascript  
 
-```
+```js
 function solve(a,b){
     if (a == 0 || b == 0) {
       return [a,b]
@@ -60,7 +60,7 @@ Aug 27
 https://www.codewars.com/kata/57547f9182655569ab0008c4  
 
 Refactored (with concat)  
-```
+```js
 function replicate(times, number) {
   if (times > 0) {
     return [number].concat(replicate(times - 1, number))
@@ -71,7 +71,7 @@ function replicate(times, number) {
 ```
 
 Original  
-```
+```js
 function replicate(times, number) {
   let array = []
   
@@ -113,7 +113,7 @@ Aug 5
 https://www.codewars.com/kata/530e15517bc88ac656000716  
 
 Certainly don't enjoy mapping out the letters, but it might be necessary?... Will refactor
-```
+```js
 function rot13(message){
   let lettersByPosition = [
     [1, 'a'],
@@ -212,7 +212,7 @@ https://www.interviewcake.com/question/javascript/word-cloud?course=fc1&section=
 
 Updated, tinkered a bit but started too late tonight - back at it tomorrow!
 (hypens causing problems, but I want to avoid regex despite liking it)
-```
+```js
 class WordCloudData {
   constructor(inputString) {
     this.wordsToCounts = new Map();
@@ -248,7 +248,7 @@ July 30
 https://www.interviewcake.com/question/javascript/inflight-entertainment?course=fc1&section=hashing-and-hash-tables  
   
 First green before checking recommended soltuion
-```
+```js
 function hasPalindromePermutation(theString) {
 
   function checkIfPalindrome(string) {
@@ -301,7 +301,7 @@ function hasPalindromePermutation(theString) {
 ```
 
 Alternative approach to checkIfPalindrome 
-```
+```js
   function checkIfPalindrome(string) {
     let isPalindrome = false;
     
@@ -357,7 +357,7 @@ Alternative approach to checkIfPalindrome
 (Interview Cake)  
 July 27  
 https://www.interviewcake.com/question/javascript/inflight-entertainment?course=fc1&section=hashing-and-hash-tables  
-```
+```js
 function canTwoMoviesFillFlight(movieLengths, flightLength) {
 
   // Determine if two movie runtimes add up to the flight length
@@ -382,7 +382,7 @@ function canTwoMoviesFillFlight(movieLengths, flightLength) {
 ```
 
 The recommended solution. First time using a Set in JS
-```
+```js
 function canTwoMoviesFillFlight(movieLengths, flightLength) {
 
   // Determine if two movie runtimes add up to the flight length
@@ -409,7 +409,7 @@ July 26
 https://www.interviewcake.com/question/javascript/cafe-order-checker?course=fc1&section=array-and-string-manipulation  
   
 Refactored
-```
+```js
 function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
 
   let takeOutNotEmpty = takeOutOrders.length >= 1;
@@ -440,7 +440,7 @@ function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
 ```
   
 Green before refactor
-```
+```js
 function isFirstComeFirstServed(takeOutOrders, dineInOrders, servedOrders) {
 
   // Check if we're serving orders first-come, first-served
@@ -479,7 +479,7 @@ July 24
 https://www.interviewcake.com/question/javascript/merge-sorted-arrays?course=fc1&section=array-and-string-manipulation  
 
 First 'green' before refactoring
-```
+```js
 function mergeArrays(myArray, alicesArray) {
 
   // Combine the sorted arrays into one large sorted array
@@ -525,7 +525,7 @@ function mergeArrays(myArray, alicesArray) {
 
 The recommended solution.  
 Here the 'isArrayExhausted' variable helps to account for what I was accomplising with the less clean 'checkForEmptyArrays'  
-```
+```js
 function mergeArrays(myArray, alicesArray) {
   const mergedArray = [];
 
@@ -587,7 +587,7 @@ June 28
 https://www.interviewcake.com/question/javascript/reverse-words?course=fc1&section=array-and-string-manipulation  
   
 This is absolutely some of the hackiest code I've ever written. It worked but..., not ideal :)
-```
+```js
 function reverseWords(message) {
   // Decode the message by reversing the words
   // console.log(message)
@@ -624,7 +624,7 @@ function reverseWords(message) {
 ```
 
 Refactor here after studying other solutions
-```
+```js
 function reverseWords(message) {
   //challenge here is to reverse all the words 'IN PLACE'
 
@@ -659,7 +659,7 @@ function reverseWords(message) {
 June 23  
 https://www.interviewcake.com/question/javascript/reverse-string-in-place?course=fc1&section=array-and-string-manipulation
 
-```
+```js
 function reverse(array) {
 
   let leftIndex = 0;
@@ -683,7 +683,7 @@ June 20
 https://www.interviewcake.com/question/javascript/merging-ranges?course=fc1&section=array-and-string-manipulation
 
 In my initial approach, I tried adding this helper function... Nope :) Was not optimal.
-```
+```js
 function mergeRanges(meetings) {
 
   //helper function
@@ -707,7 +707,7 @@ function mergeRanges(meetings) {
 ```
 
 A solution
-```
+```js
 function mergeRanges(meetings) {
 
   //copy, then sort array by start times
@@ -749,7 +749,7 @@ https://www.interviewcake.com/question/javascript/top-scores
 
 I was able to do this with .sort...  
 I'm assuming this question was created before the JS version that .sort was introduced in...
-```
+```js
 function sortScores(unorderedScores, highestPossibleScore) {
   unorderedScores.sort((a, b) => b - a);
   return unorderedScores;
@@ -759,7 +759,7 @@ function sortScores(unorderedScores, highestPossibleScore) {
 
 The non-sort solution  
 I had to throw in a lot of console.logs to make sense of it at first
-```
+```js
 function sortScores(unorderedScores, highestPossibleScore) {
   // Sort the scores in O(n) time
   const scoreCounts = new Array(highestPossibleScore + 1).fill(0);
@@ -787,7 +787,7 @@ June 16
 https://www.codewars.com/kata/57b06f90e298a7b53d000a86  
 
 First submit, before refactoring
-```
+```js
 function queueTime(customers, n) {
   const currentWaitsInLines = new Array(n).fill(0);
   
@@ -853,7 +853,7 @@ https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-
 June 13  
 https://www.codewars.com/kata/5245a9138ca049e9a10007b8
 
-```
+```js
 function countAdjacentPairs(searchString) {
   let regexSearchForDuplicate = /\b(\w+)\b\s+\1\b\s*(\1\b\s)*/gi;
   try {
@@ -872,7 +872,7 @@ June 12
 https://www.codewars.com/kata/5375f921003bf62192000746
 
 in progress
-```
+```js
 function abbreviate(string) {
   let newString = ""
   if (string.length > 4) {
@@ -892,7 +892,7 @@ function abbreviate(string) {
 June 11  
 https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
 
-```
+```js
 function persistence(num) {
   let stringedNumber = num.toString();
   let multipliedNumber = 0;
@@ -919,7 +919,7 @@ function persistence(num) {
 June 11  
 https://www.codewars.com/kata/52fba66badcd10859f00097e
 
-```
+```js
 function disemvowel(str) {
   return str.replace(/[aeiou]/gi, '');
 }
@@ -932,7 +932,7 @@ function disemvowel(str) {
 June 10  
 https://www.codewars.com/kata/52c31f8e6605bcc646000082
 
-```
+```js
 function twoSum(numbers, target) {
   let firstI = 0;
   let secondI = 0;
@@ -956,7 +956,7 @@ function twoSum(numbers, target) {
 June 9  
 https://www.codewars.com/kata/5208f99aee097e6552000148
 
-```
+```js
 function solution(string) {
     let separated = "";
     for (var i = 0; i < string.length; i++) {
@@ -1018,7 +1018,7 @@ Completed May 21 2020
 https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript
 
 #### Solution 1 (before a final refactor)
-```
+```js
 function generateHashtag (str) {
   let emptyOrLongerThan140Char = false;
   let newString = "";
@@ -1036,7 +1036,7 @@ function generateHashtag (str) {
 ```
 
 #### Solution 2 (refactored)
-```
+```js
 function generateHashtag (str) {
   if(!str || str[0] === "") return false;
 
@@ -1093,7 +1093,7 @@ https://www.codewars.com/kata/550498447451fbbd7600041c
 > 
 
 #### Solution 1 (checking for null inputs in the return)
-```
+```js
 function comp(array1, array2){
   const checkForFalses = () => {
     var onlyTrues = true;
@@ -1112,7 +1112,7 @@ function comp(array1, array2){
 
 
 #### Solution 2 (checking for null inputs prior to returning)
-```
+```js
 function comp(array1, array2){
   var onlyTrues = true;
   if (!array1 || !array2) {
@@ -1157,7 +1157,7 @@ https://www.codewars.com/kata/53368a47e38700bd8300030d
 > Note: all the hashes are pre-validated and will only contain A-Z, a-z, '-' and '.'.
 
 #### Solution
-```
+```js
 function list(names){
   var namesToJoin = [];
   names.forEach(name => namesToJoin.push(name["name"]));
@@ -1184,7 +1184,7 @@ https://www.codewars.com/kata/5b16490986b6d336c900007d
 > {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
 
 #### Solution
-```
+```js
 function myLanguages(results) {
   var sixtyOrHigherTest = Object.entries(results).filter(language => language[1] >= 60)
   return sixtyOrHigherTest.sort((a,b) => b[1] - a[1]).map(language => language[0]);
@@ -1212,7 +1212,7 @@ https://www.codewars.com/kata/5e96332d18ac870032eb735f
 > Hint: if you may don't know (enough) about numeral systems and radix, just observe the pattern!
 
 #### Solution
-```
+```js
 function womensAge(n) {
   base = 1;
   
@@ -1268,7 +1268,7 @@ https://www.codewars.com/kata/541c8630095125aba6000c00
 > => 2
 
 #### Solution
-```
+```js
 function digital_root(n) {
   let currentNumbers = n
   let sum = 0
