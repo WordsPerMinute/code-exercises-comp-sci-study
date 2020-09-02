@@ -2,6 +2,16 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Count characters in your string  
+Sep 1  
+https://www.codewars.com/kata/52efefcbcdf57161d4000091  
+
+```js
+function count (string) {  
+   return {};
+}
+```
+
 ## Recursion 101  
 Aug 31  
 https://www.codewars.com/kata/514a024011ea4fb54200004b  
