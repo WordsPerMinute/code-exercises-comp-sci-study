@@ -2,6 +2,13 @@
 Having fun here getting a little sharper with Javascript :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
+## Tribonacci Sequence  
+Sep 2  
+https://www.codewars.com/kata/tribonacci-sequence   
+
+```js
+```
+
 ## Count characters in your string  
 Sep 1  
 https://www.codewars.com/kata/52efefcbcdf57161d4000091  
