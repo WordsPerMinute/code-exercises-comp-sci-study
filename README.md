@@ -3,7 +3,7 @@ Having fun here getting a little sharper with Javascript :)
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
 ## Who likes it?  
-Sep 10  (6 kyu)
+Sep 10  (6 kyu)  
 https://www.codewars.com/kata/5266876b8f4bf2da9b000362
 
 ```js
