@@ -1,5 +1,5 @@
 # About
-Having fun here getting a little sharper with Javascript :)  
+Having fun here getting a little sharper with Javascript/Python :)  
 For Codewars, problems are measured by a kyu level, the smaller the number, the more difficult  
 
 ## Who likes it?  
@@ -775,6 +775,25 @@ function mergeRanges(meetings) {
   
   return optimizedMeetings;
 }
+```
+
+Oct 7 2020
+Python Solution
+```
+def merge_ranges(meetings):
+    sorted_meetings = sorted(meetings)
+    
+    optimized_meetings = [sorted_meetings[0]]
+    
+    for current_meeting_start, current_meeting_end in sorted_meetings[1:]:
+        last_merged_meeting_start, last_merged_meeting_end = optimized_meetings[-1]
+        
+        if current_meeting_start <= last_merged_meeting_end:
+            optimized_meetings[-1] = (last_merged_meeting_start, max(last_merged_meeting_end, current_meeting_end))
+        else:
+          optimized_meetings.append((current_meeting_start, current_meeting_end))
+
+    return optimized_meetings
 ```
 
 ---
